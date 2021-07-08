@@ -1,0 +1,132 @@
+.posts__post {
+	min-width: 85%;
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px gray;
+	margin: 1.5rem 0;
+}
+
+.post__header {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.post__header > img {
+	object-fit: contain;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50px;
+}
+
+.post__headerTitle {
+	margin-left: 0.7rem;
+	flex-grow: 1;
+}
+
+.post__headerTitle > h4 {
+	font-weight: 500;
+}
+
+.post__headerTitle > p {
+	color: #818181;
+}
+
+.post__headerMore {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.post__headerMore > div {
+	display: flex;
+	cursor: pointer;
+	margin-bottom: 5px;
+	padding: 5px;
+	border-radius: 50px;
+}
+
+.post__headerMore > div:hover {
+	background-color: #e8e8e8;
+}
+
+.post__message {
+	margin: 0.7rem 0;
+}
+
+.post__image {
+	height: 15rem;
+	display: flex;
+	justify-content: center;
+	background-color: #f1f0f0;
+	border-radius: 5px;
+}
+
+.post__image > img {
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+}
+
+.post__footerTop {
+	display: flex;
+	padding: 0.5rem 0;
+}
+
+.post__footerTop > .MuiSvgIcon-root {
+	background-color: #1877f2;
+	color: #fff;
+	border-radius: 50%;
+	padding: 5px;
+	font-size: 1rem;
+	margin-right: 0.25rem;
+}
+
+.post__footerBottom {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 0.5rem;
+	border-top: 1px solid #e0e0e0;
+}
+
+.post__footerBottom > button {
+	padding: 0.5rem 1rem;
+	border-radius: 50px;
+}
+
+.post__footerBottom > .likeBtnActive {
+	color: #1877f2;
+}
+
+.post__footerBottom > .likeBtn:hover {
+	background-color: #85b8fc;
+	color: #fff;
+}
+
+.post__footerBottom > .commentBtn:hover {
+	background-color: #f0dc6c;
+	color: #fff;
+}
+
+.post__footerBottom > .shareBtn:hover {
+	background-color: #bb78f3;
+	color: #fff;
+}
+
+/* md sytyling */
+@media (min-width: 768px) {
+	.posts__post {
+		min-width: 30rem;
+	}
+}
+
+/* lg styling */
+@media (min-width: 1024px) {
+	.posts__post {
+		min-width: 40rem;
+	}
+}

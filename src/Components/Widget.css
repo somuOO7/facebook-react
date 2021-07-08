@@ -1,0 +1,42 @@
+.widget {
+	padding: 1rem 0.5em;
+}
+
+.widget__header {
+	display: none;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+
+.widget__body > div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.widget__body > div > img {
+	object-fit: contain;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+}
+
+.widget__body > div > p {
+	display: none;
+	margin-left: 0.5rem;
+}
+
+/* lg styling */
+@media (min-width: 1024px) {
+	.widget {
+		padding: 1rem 2em;
+	}
+
+	.widget__header {
+		display: inline-block;
+	}
+
+	.widget__body > div > p {
+		display: inline-block;
+	}
+}

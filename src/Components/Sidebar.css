@@ -1,0 +1,53 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+}
+
+.sidebar__memu {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 50px;
+	padding: 0.5rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.sidebar__memu:hover {
+	background-color: #e0e0e0;
+}
+
+.sidebar__memu > img {
+	object-fit: contain;
+	height: 2.5rem;
+	border-radius: 50%;
+}
+
+.sidebar__memu > .MuiSvgIcon-root {
+	height: 2.5rem;
+	width: 2.5rem;
+	color: #3f8aec;
+}
+
+.sidebar__memu > p {
+	display: none;
+	margin-left: 0.5rem;
+	font-weight: 600;
+}
+
+/* md styling */
+@media (min-width: 768px) {
+	.sidebar__memu > img {
+		height: 3rem;
+	}
+
+	.sidebar__memu > .MuiSvgIcon-root {
+		height: 3rem;
+		width: 3rem;
+	}
+
+	.sidebar__memu > p {
+		display: inline-block;
+	}
+}
